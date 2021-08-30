@@ -1,0 +1,4 @@
+Model,Parameters,Score
+RF,"{'n_estimators': 400, 'max_features': 'log2', 'max_depth': 10}",0.9560586693966096
+XGB,"{'n_estimators': 1000, 'max_features': 'sqrt', 'max_depth': 3, 'learning_rate': 0.1}",0.9726966716634371
+ADA,"{'n_estimators': 100, 'learning_rate': 1.0}",0.9608470622646339
