@@ -36,6 +36,11 @@ Some features show differences between Churn and Exist groups.
 ![graph5](/images/corr.png)
 
 
+## Dependencies
+- Python 3.5+
+- Machine Learning Libraries: Numpy, Pandas, Sciki-Learn
+- Visualization: Matplotlib
+
 
 ## File Description
 The files structure is arranged as below:
