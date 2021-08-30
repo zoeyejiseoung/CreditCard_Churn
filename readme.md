@@ -3,7 +3,7 @@
 ## Project Description
 Customer Churn (customer attrition) is the most challenge problem for business such as credit cards or telecommunication companies etc. Building models to predict who is going to churn would help improve business, and companies can prevent from losing their customers. 
 
-In this project, I analyzed [credit card customers' dataset](https://www.kaggle.com/sakshigoyal7/credit-card-customers) and built machine learning (ML) models to predict who churn the service. More details for the dataset is [here](https://leaps.analyttica.com/sample_cases/11).
+In this project, I analyzed [credit card customers' dataset](https://www.kaggle.com/sakshigoyal7/credit-card-customers) and built machine learning (ML) models to predict who churn the service. More details for the dataset is [here](https://leaps.analyttica.com/sample_cases/11). I also wrote a [blog](https://medium.com/@yejizoeseoung/credit-card-customers-analysis-6a193f00c044) for this project.
 
 
 ## Machine Learning Models
