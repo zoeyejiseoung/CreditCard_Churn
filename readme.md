@@ -22,8 +22,11 @@ The dataset has unbalanced data whether customers churn or retain. The majority 
 ![graph1](/images/churn.png)
 
 
+
 2. Any differences between Churn and Exist groups depending on each feature?
-Some features show differences between Churn and Exist groups
+Some features show differences between Churn and Exist groups.
+
+
 ![graph2](/images/re_bal.png)
 ![graph3](/images/trans_ct.png)
 ![graph4](/images/cat_graphs.png)
