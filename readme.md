@@ -51,3 +51,7 @@ The files structure is arranged as below:
 
     - Credit_Card_Customers.ipynb shows the entire workflow including cleaning data, visualizing data, building the models, and evaludating models.
     - readme.md
+
+
+## Acknowledgements
+Data was provided by Kaggle
