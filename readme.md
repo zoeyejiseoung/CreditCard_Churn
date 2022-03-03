@@ -3,13 +3,16 @@
 ## Project Description
 Customer Churn (customer attrition) is the most challenge problem for business such as credit cards or telecommunication companies etc. Building models to predict who is going to churn would help improve business, and companies can prevent from losing their customers. 
 
-In this project, I analyzed [credit card customers' dataset](https://www.kaggle.com/sakshigoyal7/credit-card-customers) and built machine learning (ML) models to predict who churn the service. More details for the dataset is [here](https://leaps.analyttica.com/sample_cases/11). I also wrote a [blog](https://medium.com/@yejizoeseoung/credit-card-customers-analysis-6a193f00c044) for this project.
+In this project, I analyzed [credit card customers' dataset](https://www.kaggle.com/sakshigoyal7/credit-card-customers) and built machine learning (ML) models to predict who churn the service. The roc-auc score of the final model is 0.993. 
+
+
+More details for the dataset is [here](https://leaps.analyttica.com/sample_cases/11). I also wrote a [blog](https://medium.com/@yejizoeseoung/credit-card-customers-analysis-6a193f00c044) for this project and posted in [Kaggle](https://www.kaggle.com/yejiseoung/building-gradient-boosting-pipeline-0-99-roc-auc).
 
 
 ## Machine Learning Model Pipeline
-We compared 6 models (Logistic Regression, Support Vector Machine, KNeighbor, Random Forest (RF), AdaBoost (ADA), and GradientBoostingModel (GBM)) by using results' matrics (Accuracy, Recall, Precision, and ROC AUC score). 
+I compared 6 models (Logistic Regression, Support Vector Machine, KNeighbor, Random Forest (RF), AdaBoost (ADA), and GradientBoostingModel (GBM)) by using results' metrics (Accuracy, Recall, Precision, and ROC AUC score). 
 
-GBM model showed best results compared to other models. 
+GBM model showed the best result compared to other models. 
 
 ![ML1](/images/MLmodels_2.png)
 
@@ -82,8 +85,14 @@ The files structure is arranged as below:
 
 ## Dependencies
 - Python 3.5+
-- Machine Learning Libraries: Numpy, Pandas, Sciki-Learn
-- Visualization: Matplotlib
+- Machine Learning Libraries: 
+    - Numpy
+    - Pandas
+    - Sciki-Learn
+    - Feature-engine
+    - Imblearn
+    - Optuna
+- Visualization: Matplotlib, Seaborn
 
 
 ## Acknowledgements
