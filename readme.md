@@ -7,16 +7,19 @@ In this project, I analyzed [credit card customers' dataset](https://www.kaggle.
 
 
 ## Machine Learning Model Pipeline
-We compared 6 models (Logistic Regression, Support Vector Machine, KNeighbor, Random Forest (RF), AdaBoost (ADA), and GradientBoostingModel (GBM)) by using results' matrics (Accuracy, Recall, Precision, and ROC AUC score). Given the results, we built GBM model pipeline by tuning hyperparameters. 
-
+We compared 6 models (Logistic Regression, Support Vector Machine, KNeighbor, Random Forest (RF), AdaBoost (ADA), and GradientBoostingModel (GBM)) by using results' matrics (Accuracy, Recall, Precision, and ROC AUC score). 
 
 GBM model showed best results compared to other models. 
-![ML1](/images/MLmodels.png)
+
+![ML1](/images/MLmodels_2.png)
+
+
+Tuned GBM model shows better performance compared to the baseline GBM model. 
+
+![ML2](/images/GBMCompare.png)
 
 **By using the best hyperparamters, we got an improved GBM model showing 7% increased performance (0.993 of ROC-AUC score) compared to the baseline (0.916 of ROC-AUC).**
 
-Tuned GBM model shows better performance compared to the baseline GBM model. 
-![ML2](/images/GBMCompare.png)
 
 
 **NOTE**: Please see [Building_Model_Pipeline.ipynb](https://github.com/yejiseoung/CreditCard_Churn/blob/main/Building_Model_Pipeline.ipynb), if you want to see more detail.
@@ -24,10 +27,13 @@ Tuned GBM model shows better performance compared to the baseline GBM model.
 
 ## Dealing with Imbalanced dataset
 ![graph1](/images/churn.png)
-We have a classification problem. We have 83% of Existing customer data and 16% of Attrited customer data. Based on the percentage of the distribution of target, we can say that this dataset is imbalanced. So, we needed to deal with this very carefully.
+
+We have a classification problem. We have 84% of Existing customer data and 16% of Attrited customer data. This dataset is imbalanced. So, we needed to deal with this very carefully.
 
 I compared 5 different over-sampling methods: RandomOverSampler, SMOTE, ADASYN, BorderlineSMOTE, and SVMSMOTE.
+
 As a result, ADASYN and BorderlineSMOTE showed the best performances so that I chose ADASYN to balance the dataset in the final pipeline. 
+
 ![graph2](/images/oversampling.png)
 
 **NOTE**: Please see [Oversampling.ipynb](https://github.com/yejiseoung/CreditCard_Churn/blob/main/Oversampling.ipynb), if you want to see more detail.
