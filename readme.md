@@ -67,11 +67,16 @@ The files structure is arranged as below:
     - Data
         - BankChurners.csv: raw data 
         
-    - Building_Model_Pipeline.ipynb shows the workflow regarding building Gradient Boosting Model.
-    - Cleaning_EDA_and_Visalization.ipynb shows data cleaning, exploratory data analysis, and visualizing data.
-    - FeatureEngineeringScaling.ipynb shows investigations regarding feature engineering, feature scaling, and feature importance. 
-    - HyperparameterTuningForGBM.ipynb shows hyperparameter tuning by using Optuna to find the best parameters for GBM model. 
-    - Oversampling.ipynb shows finding the best over-sampling methods for this project to deal with imbalanced dataset.
+    - Building_Model_Pipeline.ipynb 
+        : Workflow regarding building Gradient Boosting Model.
+    - Cleaning_EDA_and_Visalization.ipynb 
+        : Data cleaning, exploratory data analysis, and visualizing data.
+    - FeatureEngineeringScaling.ipynb 
+        : Investigations regarding feature engineering, feature scaling, and feature importance. 
+    - HyperparameterTuningForGBM.ipynb 
+        : Hyperparameter tuning by using Optuna to find the best parameters for GBM model. 
+    - Oversampling.ipynb
+        : Finding the best over-sampling methods for this project to deal with imbalanced dataset.
     - readme.md
 
 
