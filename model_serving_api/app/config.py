@@ -26,7 +26,7 @@ class Settings(BaseSettings):
         "https://localhost:8000",  # type: ignore
     ]
 
-    PROJECT_NAME: str = "Customer Churn Prediction API"
+    PROJECT_NAME: str = "Credit Card Customers Churn API"
 
     class Config:
         case_sensitive = True

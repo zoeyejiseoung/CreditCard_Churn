@@ -1,13 +1,14 @@
 from typing import Any, List, Optional
 
 from pydantic import BaseModel
-from gbm_model.processing.validation import CreditCardDataInputSchema
+from classification_model.processing.validation import CreditCardDataInputSchema
 
 
 class PredictionResults(BaseModel):
     errors: Optional[Any]
     version: str
-    predictions: Optional[List[float]]
+    #predictions: Optional[List[float]]
+    predictions: int
 
 
 class MultipleCreditCardDataInputs(BaseModel):
@@ -18,6 +19,7 @@ class MultipleCreditCardDataInputs(BaseModel):
             "example": {
                 "inputs": [
                     {
+                        "CLIENTNUM": 768805383,
                         "Customer_Age": 31,
                         "Dependent_count": 1,
                         "Months_on_book": 18,
@@ -33,10 +35,12 @@ class MultipleCreditCardDataInputs(BaseModel):
                         "Total_Ct_Chng_Q4_Q1": 0.806,
                         "Avg_Utilization_Ratio": 0.530,
                         "Gender": "F",
-                        "Education_Level": "Unknown",
+                        "Education_Level": "High School",
                         "Marital_Status": "Single",
-                        "ncome_Category": "Less than $40K",
+                        "Income_Category": "Less than $40K",
                         "Card_Category": "Blue",
+                        "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1": 0.000093,
+                        "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2": 0.99994,
                     }
                 ]
             }
